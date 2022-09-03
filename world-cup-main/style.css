@@ -1,0 +1,263 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 50px 130px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.hero-section {
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    background-color: #161616;
+    color: aliceblue;
+    position: relative;
+    border-radius: 18px;
+}
+
+.banner {
+    padding-right: 550px;
+}
+
+.banner p {
+    padding: 20px 0;
+}
+
+.link {
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #DD0000;
+    border-radius: 5px;
+}
+
+.banner-img {
+    padding-right: 100px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.match-section {
+    display: flex;
+    align-items: flex-start;
+    padding: 50px 0px;
+}
+
+.match-details {
+    background-color: #161616;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.match-details a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.match-details a:nth-child(2) {
+    margin: 20px 0;
+}
+
+.link-color {
+    color: #161616;
+    background-color: white;
+    padding: 15px 0;
+    border-radius: 10px;
+
+}
+
+.link-color-1 {
+    color: white;
+    background-color: #DD0000;
+    padding: 15px 0;
+    border-radius: 10px;
+}
+
+.player-section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 0 50px;
+}
+
+.article {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.article-content {
+    padding: 10px;
+}
+
+.article-content p {
+    margin: 10px 0;
+}
+
+.article-info {
+    display: flex;
+}
+
+.article-info .icon {
+    padding-right: 10px;
+}
+
+.article-info-time,
+.article-info-author {
+    display: flex;
+    align-items: center;
+}
+
+.article-info-author {
+    margin-left: 25px;
+}
+
+.article button {
+    padding: 5px 18px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+footer {
+    background-color: #161616;
+    color: white;
+    text-align: center;
+    padding: 80px;
+    margin: 0 50px;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    border-top: 1px solid gainsboro;
+
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: white;
+}
+.social-links a {
+    margin: 0 10px;
+}
+.social-links img {
+    filter: invert(1);
+}
+
+@media (max-width: 768px){
+    h1 {
+        font-size: 25px;
+    }
+
+    .container {
+        padding: 20px 30px;
+    }
+    .hero-section {
+        height: 380px;
+    }
+    .banner-img {
+        height: 340px;
+        padding-right: 10px;
+    }
+
+    .banner{
+        padding-right: 300px;
+    }
+
+    .match-section {
+        flex-direction: column;
+    }
+
+    .player-section {
+        padding: 0;
+    }
+
+    .match-details {
+        padding: 20px 0;
+        background-color: white;
+    }
+
+    .match-details {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 10px;
+    }
+    .match-details a {
+        border: 1px solid #ccc;
+    }
+
+    .match-details a:nth-child(2) {
+        margin: 0;
+    }
+
+    .player-section {
+        grid-template-columns: auto auto;
+    }
+
+    .article img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 391px){
+    .banner {
+        padding: 30px 40px;
+    }
+    .hero-section{
+        text-align: center;
+        flex-direction: column;
+        padding: 0;
+        height: 500px;
+    }
+
+    .banner-img {
+        height: 250px;
+        right: 10px;
+    }
+
+    .match-details {
+        justify-items: center;
+        row-gap: 15px;
+        grid-template-columns: auto;
+    }
+
+    .match-details a {
+        padding: 14px 35px;
+    }
+
+    .player-section {
+        grid-template-columns: auto;
+    }
+
+    .match-section {
+        padding-top: 20px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+    }
+    .footer-menu a {
+        margin: 10px 0;
+    }
+
+    footer {
+        margin: 0;
+    }
+}
